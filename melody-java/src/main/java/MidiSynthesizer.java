@@ -5,8 +5,8 @@ import javax.sound.midi.Synthesizer;
 
 public class MidiSynthesizer {
 
-    private static int INSTRUMENT = 3;
-    private static int VOLUME = 127;
+    private static final int INSTRUMENT = 3;
+    private static final int VOLUME = 127;
     public Synthesizer synth;
     private MidiChannel channel;
 
@@ -21,13 +21,11 @@ public class MidiSynthesizer {
 
     public void play(Note note){
         try {
-            playMidi(midiId(note.getPitch(), note.getOctave()), note.getDurtion());
+            playMidi(midiId(note.getPitch(), note.getOctave()), note.getDuration());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
-
 
     private void playMidi(int midiId, int duration) throws InterruptedException {
         System.out.println(midiId);
@@ -35,7 +33,6 @@ public class MidiSynthesizer {
         Thread.sleep(duration);
         channel.noteOff(midiId);
     }
-
 
     private int midiId(Pitch pitch, int octave) {
         return pitch.ordinal() + octave * 12;

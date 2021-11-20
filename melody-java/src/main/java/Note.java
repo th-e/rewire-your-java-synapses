@@ -1,12 +1,12 @@
 public class Note {
-    private Pitch pitch;
-    private int octave;
-    private int durtion;
+    private final Pitch pitch;
+    private final int octave;
+    private final int duration;
 
-    public Note(Pitch pitch, int octave, int durtion) {
+    public Note(Pitch pitch, int octave, int duration) {
         this.pitch = pitch;
         this.octave = octave;
-        this.durtion = durtion;
+        this.duration = duration;
     }
 
     public Pitch getPitch() {
@@ -17,7 +17,7 @@ public class Note {
         return octave;
     }
 
-    public int getDurtion() {
-        return durtion;
+    public int getDuration() {
+        return duration;
     }
 }

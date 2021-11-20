@@ -2,7 +2,7 @@ import javax.sound.midi.MidiUnavailableException;
 
 public class Melody {
 
-    private MidiSynthesizer synthesizer = new MidiSynthesizer();
+    private final MidiSynthesizer synthesizer = new MidiSynthesizer();
 
     public void play() {
         try {
@@ -11,7 +11,5 @@ public class Melody {
         } catch (MidiUnavailableException e) {
             e.printStackTrace();
         }
-
-
     }
 }
