@@ -3,7 +3,7 @@ import javax.sound.midi.MidiSystem
 import javax.sound.midi.Synthesizer
 import Pitch.*
 
-class Synthesizer: 
+class MidiSynthesizer: 
 
   val instrument = 3
   val volume = 127

@@ -16,7 +16,7 @@ class MelodyAsValues:
     ).reverse
 
     // impure world
-    val synthesizer = Synthesizer()
+    val synthesizer = MidiSynthesizer()
     synthesizer.synth.open()
     melody.foreach(note => synthesizer.play(note))
     synthesizer.synth.close()

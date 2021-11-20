@@ -2,7 +2,7 @@ import Pitch.*
 
 class Melody:
 
-  val synthesizer = Synthesizer()
+  val synthesizer = MidiSynthesizer()
 
   def play() =
     synthesizer.synth.open()
