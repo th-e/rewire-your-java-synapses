@@ -38,8 +38,8 @@
 /src/intellij*/*.ipr
 /src/intellij*/*.iws
 **/.cache
-**/.idea
-**/.settings
+/.idea
+/.settings
 
 # vscode
 /.vscode
@@ -48,7 +48,7 @@
 /qbin
 
 # sbt's target directories
-**/target/
+/target/
 /project/**/target/
 /test/macro-annot/target/
 /test/files/target/
@@ -66,5 +66,3 @@ jitwatch.out
 .bloop
 project/**/metals.sbt
 
-
-**/.DS_Store
