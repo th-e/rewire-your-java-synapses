@@ -1,4 +1,4 @@
-## sound effect with scala
+## unix pipe with scala
 
 ### Usage
 
