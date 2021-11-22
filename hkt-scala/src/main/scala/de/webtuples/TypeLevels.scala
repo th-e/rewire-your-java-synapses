@@ -7,7 +7,7 @@ import cats.Monad.ops.toAllMonadOps   //uff
 object TypeLevels:
 
     def firstLevel(a: Int, b: Int) =
-        a*a + b*b
+        a + b
 
     def secondLevel[T](a: List[T], b: List[T]) =
         a ++ b
